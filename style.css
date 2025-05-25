@@ -1,0 +1,71 @@
+body {
+    background: #ededed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.editor-box {
+    margin: 40px auto;
+    max-width: 900px;
+    min-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+    background: #fff;
+}
+
+.toolbar {
+    background: #444;
+    border-radius: 12px 12px 0 0;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.toolbar button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 10px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar button:hover,
+.toolbar button.selected {
+    background: #666;
+}
+
+.toolbar img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.color-icon {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #e53935;
+    vertical-align: middle;
+}
+
+#editor {
+    min-height: 350px;
+    padding: 20px 24px;
+    font-size: 1.15em;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #222;
+    border-radius: 0 0 12px 12px;
+    overflow-y: auto;
+}
